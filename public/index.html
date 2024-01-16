@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset='utf-8' />
+    <link rel='icon' href='%PUBLIC_URL%/favicon.ico' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta
-      name="description"
-      content="Web site created using create-snowpack-app"
+      name='description'
+      content='Web site created using create-snowpack-app'
     />
     <!--
       Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
@@ -16,11 +16,11 @@
       - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
     -->
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="%PUBLIC_URL%/_dist_/index.css"
+      rel='stylesheet'
+      type='text/css'
+      href='%PUBLIC_URL%/_dist_/index.css'
     />
-    <title>Snowpack & Tailwind App</title>
+    <title> Add Fox App</title>
   </head>
   <body>
     <!--
@@ -31,38 +31,27 @@
 
       Start modyfing from here.
     -->
-    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
+    <div class='py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='text-center'>
         <p
-          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+          class='text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase'
         >
           Snowpack
         </p>
         <h3
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+          class='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10'
         >
           Tailwind template
         </h3>
-        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+        <p class='mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto'>
           Use this template to build awesome websites using Snowpack and
           Tailwind. It also includes Prettier and automatic publish to GitHub
           pages using GitHub Actions. Learn more:
         </p>
 
-        <div id="images">
+        <button class='p-3' id=''> Add a New Fox </button>
 
-          <div class="p-6"> 
-            <img class="mx-auto rounded-xl" width="320" src="https://randomfox.ca/images/44.jpg" alt=""> 
-          </div>
-
-          <div class="p-6"> 
-            <img class="mx-auto rounded-xl" width="320" src="https://randomfox.ca/images/55.jpg" alt=""> 
-          </div>
-
-          <div class="p-6"> 
-            <img class="mx-auto rounded-xl" width="320" src="https://randomfox.ca/images/66.jpg" alt=""> 
-          </div>
-
+        <div id='images' class='my-3 grid grid-cols-1'>
 
         </div>
 
@@ -70,6 +59,6 @@
     </div>
 
     <!-- Add more scripts here -->
-    <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+    <script type='module' src='%PUBLIC_URL%/_dist_/index.js'></script>
   </body>
 </html>
