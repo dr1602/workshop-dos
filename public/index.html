@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link rel='icon' href='%PUBLIC_URL%/favicon.ico' />
+    <link rel='icon' href='%PUBLIC_URL%/icons8-fox-64.png' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta
       name='description'
@@ -20,7 +20,7 @@
       type='text/css'
       href='%PUBLIC_URL%/_dist_/index.css'
     />
-    <title> Add Fox App</title>
+    <title> Add Fox App </title>
   </head>
   <body>
     <!--
@@ -33,26 +33,25 @@
     -->
     <div class='py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
       <div class='text-center'>
-        <p
-          class='text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase'
-        >
-          Snowpack
-        </p>
-        <h3
+        <h1
           class='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10'
         >
-          Tailwind template
-        </h3>
+          Add Fox App
+        </h1>
         <p class='mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto'>
-          Use this template to build awesome websites using Snowpack and
-          Tailwind. It also includes Prettier and automatic publish to GitHub
-          pages using GitHub Actions. Learn more:
+          Use this App to fill your eyes, heart and mind with lovely Foxes!
         </p>
 
-        <button class='p-3' id=''> Add a New Fox </button>
+        <div class='grid grid-cols-2 my-6'>
+          <button class='py-2 px-4 text-lg text-green-700 bg-green-300 border-green-500 hover:bg-green-500 rounded mx-auto border-2' id='addButton'> Add a New Fox </button>
 
-        <div id='images' class='my-3 grid grid-cols-1'>
+          <button class='py-2 px-4 text-lg text-red-700 bg-red-300 border-red-500 hover:bg-red-500 rounded mx-auto border-2' id='deleteButton'> Remove all Foxes </button>
+        </div>
 
+        <div id='mainContainer'>
+          <div id='images' class='my-3 grid grid-cols-1 bg-slate-300 w-[320px]'>
+
+          </div>
         </div>
 
       </div>

@@ -7,7 +7,7 @@ const isIntersecting = (entry) => {
 
 const loadImage = (entry) => {
     const container = entry.target; // container (Div)
-    const imagen = container.firstChild;
+    const imagen = container.querySelector('img');
     const url = imagen.dataset.src;
     // cargar imagen
     imagen.src = url;
@@ -31,7 +31,7 @@ const observer = new IntersectionObserver((entries) => {
         .forEach(loadImage)
 })
 
-export const registerImage = (imagen) => {
+export const registerImage = (container) => {
     // Intersection Observer -> observer(imagen)
-    observer.observe(imagen);
+    observer.observe(container);
 }
